@@ -1,6 +1,6 @@
 package Zadanie2;
 
-public class Mammal extends Animal{
+public class Mammal extends Animal implements AnimalMove,AnimalBehaviour{
 
     public Mammal(){
         super();
@@ -16,5 +16,6 @@ public class Mammal extends Animal{
     @Override
     public void getEat(){System.out.println("Ssaki dzielą się na: mięsożerne, padlinożerne, roślinożerne");}
 
-
+    public void move() { System.out.println("Ssak porusza się"); }
+    public void sleep() { System.out.println("Ssak śpi"); }
 }

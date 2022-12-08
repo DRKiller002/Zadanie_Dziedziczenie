@@ -1,6 +1,6 @@
 package Zadanie2;
 
-public abstract class Animal {
+public abstract class Animal implements AnimalMove,AnimalBehaviour {
     public String name;
     int age;
     int weight;
@@ -11,9 +11,9 @@ public abstract class Animal {
         this.weight=weight;
     }
     public Animal(){
-        name="Zwierze";
-        age=3;
-        weight=20;
+//        name="Zwierze";
+//        age=3;
+//        weight=20;
     }
 
     public Animal(String name, int age, int weight, String kolorpior) {

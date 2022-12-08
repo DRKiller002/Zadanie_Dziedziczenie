@@ -1,6 +1,6 @@
 package Zadanie2;
 
-public class Dog extends Mammal{
+public class Dog extends Mammal implements AnimalMove,AnimalBehaviour{
     private String breed;
 
 //    Dog(){
@@ -37,4 +37,7 @@ public class Dog extends Mammal{
                 "breed='"+breed +'\''+
                 '}';
     }
+
+    public void move() { System.out.println("Pies biega"); }
+    public void sleep() { System.out.println("Pies śpi na kanapie"); }
 }
